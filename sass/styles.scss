@@ -1,0 +1,94 @@
+body {
+  width: 350px;
+}
+
+.container {
+  border: 0.1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(130, 130, 130);
+  overflow: hidden;
+}
+
+.tool-bar {
+  background-color: rgb(80, 80, 80);
+}
+
+.exit,
+.minimize,
+.maximize {
+  border-radius: 100%;
+  width: 17px;
+  height: 17px;
+  border: 0;
+  margin: 3px;
+}
+
+.exit {
+  background-color: rgb(255, 56, 56);
+}
+
+.minimize {
+  background-color: rgb(255, 222, 56);
+}
+
+.maximize {
+  background-color: rgb(10, 207, 0);
+}
+
+.output {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+
+.current-display {
+  margin: 0;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.previous-display {
+  margin: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+.buttons-container {
+  background-color: rgb(200, 200, 200);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.calculator-button {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 17px;
+}
+
+.button-difference,
+.button-sum,
+.button-multiplication,
+.button-division,
+.button-equal {
+  background-color: rgb(233, 140, 0);
+  color: white;
+  border: 0.1px solid rgb(120, 120, 120);
+}
+
+.button-0 {
+  grid-row: 5;
+  grid-column: 1 / 3;
+  text-align: left;
+  padding-left: 35px;
+}
